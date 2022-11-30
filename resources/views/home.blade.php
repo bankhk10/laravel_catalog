@@ -6,16 +6,9 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">{{ __('Dashboard') }}</div>
-                    test
-                    {{-- <div class="card-body">
-                        <a href="{{ route('uplaod') }}">อัพโหลดรูป</a>
-                    </div>
-                    <div class="card-body">
-                        <a href="{{ route('upload.show') }}">ดูรูป</a>
-                    </div>
-                    <div class="card-body">
-                        <a href="{{ route('uplaod') }}">สร้างอัลบัม</a>
-                    </div> --}}
+                    <h1 class="mt-4 text-center">
+                        Test Atthapol Mongckol
+                    </h1>
                 </div>
             </div>
         </div>

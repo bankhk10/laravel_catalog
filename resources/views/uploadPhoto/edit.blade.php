@@ -23,15 +23,12 @@
                         @csrf
                         @method('PUT')
                         <div class="form-group mb-3">
-                            <label for="">กรุณาเลือกรูป</label>
-                            <input type="file" name="photo" class="form-control" accept="image/*" required>
+                            <input type="file" name="photo" class="form-control mt-4" accept="image/*" required>
                         </div>
                         <div class="form-group mb-3">
                             <button type="submit" class="btn btn-primary">อัพเดท</button>
                         </div>
-
                     </form>
-
                 </div>
             </div>
         </div>
@@ -46,6 +43,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 250px;
+  height: 250px;
 }
 </style>

@@ -12,21 +12,17 @@
                 <div class="card">
                     <div class="card-header">
                         <h4>อัพโหลดรูปภาพ
-                            <a href="{{ url('photo') }}" class="btn btn-secondary float-end">ย้อนกลับ</a>
                         </h4>
                     </div>
                     <div class="card-body">
-
                         <form action="{{ url('add-photo') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group mb-3">
-                                <label for="">กรุณาเลือกรูป</label>
                                 <input type="file" name="photo" class="form-control" accept="image/*" required>
                             </div>
                             <div class="form-group mb-3">
                                 <button type="submit" class="btn btn-primary">บันทึก</button>
                             </div>
-
                         </form>
 
                     </div>

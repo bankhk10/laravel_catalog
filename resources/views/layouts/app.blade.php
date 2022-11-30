@@ -55,37 +55,15 @@
                                 </li>
                             @endif
                         @else
-
-                        <li class="nav-item">
-                            <a class="nav-link right" href="{{ url('add-photo') }}">อัพโหลด</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('photo') }}">รูปทั้งหมด</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('catalog') }}">อัลบัม</a>
-                        </li>
-
-                        {{-- <li>
-                            <a href="{{ route('uplaod') }}">
-                                <ul class="ml-4 mt-4">
-                                    อัพโหลดรูป
-                                </ul>
-                            </a>
-                            <a href="{{ route('upload.show') }}">
-                                <ul class=" mr-4 mt-4">
-                                    ดูรูป
-                                </ul>
-                            </a>
-                            <a href="{{ route('uplaod') }}">
-                                <ul class=" mr-4 mt-4">
-                                    สร้างอัลบัม
-                                </ul>
-                            </a>
-
-
-                        </li> --}}
-
+                            <li class="nav-item">
+                                <a class="nav-link right" href="{{ url('add-photo') }}">อัพโหลด</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url('photo') }}">รูปทั้งหมด</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url('catalog') }}">อัลบั้ม</a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -121,16 +99,18 @@
 
 
 <style>
-    .rightOne{
-        margin-right:70em;
+    .rightOne {
+        margin-right: 70em;
         color: rgb(11, 11, 11);
     }
-    .rightTwo{
-        margin-right:60em;
+
+    .rightTwo {
+        margin-right: 60em;
         color: rgb(11, 11, 11);
     }
-    .rightTee{
-        margin-right:40em;
+
+    .rightTee {
+        margin-right: 40em;
         color: rgb(11, 11, 11);
     }
 </style>

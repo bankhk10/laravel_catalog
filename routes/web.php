@@ -41,8 +41,9 @@ Route::get('show-catalog/{id}', [CatalogController::class, 'show']);
 Route::get('edit-catalog/{id}', [CatalogController::class, 'edit']);
 Route::put('update-catalog/{id}', [CatalogController::class, 'update']);
 Route::delete('delete-catalog/{id}', [CatalogController::class, 'destroy']);
+Route::put('select-catalog', [CatalogController::class, 'selectChack']);
 Route::get('sort-catalog/{id}', [CatalogController::class, 'sort']);
-
+Route::put('sort-catalog', [CatalogController::class, 'sortUpdate']);
 
 
 

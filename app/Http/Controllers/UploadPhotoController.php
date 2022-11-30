@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Pagination\Paginator;
 
-
-use App\Models\NameCatalog;
 use App\Models\Catalog;
 use Auth;
 
@@ -19,8 +18,7 @@ class UploadPhotoController extends Controller
     //
     public function index()
     {
-        // $upload = Upload::all()->where('user_id', Auth::user()->id);
-        $upload = Catalog::orderBy('mime', 'desc')->where('user_id', Auth::user()->id)->get();
+        $upload = Catalog::orderBy('mime', 'desc')->where('user_id', Auth::user()->id)->paginate(5);
         return view('uploadPhoto.index', compact('upload'));
     }
 
@@ -91,6 +89,6 @@ class UploadPhotoController extends Controller
             File::delete($destination);
         }
         $upload->delete();
-        return redirect()->back()->with('status', 'Student Image Deleted Successfully');
+        return redirect()->back()->with('status', 'ลบรูปภาพสำเร็จ');
     }
 }

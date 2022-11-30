@@ -7,14 +7,13 @@
                 <div class="card">
                     <div class="card-header">
                         <h4>รูปภาพทั้งหมดในอัลบั้ม
+                            <a href="{{ url('catalog') }}" class="btn btn-secondary float-end">ย้อนกลับ</a>
                         </h4>
                     </div>
                     <div class="card-body">
-
                         <div class="album py-5 bg-light">
                             <div class="container">
                                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
                                     @foreach ($catalog as $item)
                                         <div class="col">
                                             <div class="card shadow-sm">
@@ -24,7 +23,6 @@
                                             </div>
                                         </div>
                                     @endforeach
-
                                 </div>
                             </div>
                         </div>
